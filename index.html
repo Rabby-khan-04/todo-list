@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To Do list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="container-md py-5 mb-5">
+        <h1 class="fw-bold text-center">Todo List</h1>
+    </div>
+
+
+    <section class="mb-5 py-5">
+        <div class="container-md">
+            <div class="row row-cols-md-auto g-3 align-items-center">
+                <div class="col-12 col-lg-11">
+                    <label class="visually-hidden" for="list-input">List Item</label>
+                    <div class="input-group">
+                        <div class="input-group-text"><i class="fa-solid fa-clipboard-list"></i></div>
+                        <input type="text" class="form-control" id="list-input" placeholder="List Item">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-1 ">
+                    <button type="submit" id="add_btn" class="btn btn-danger">Add Item</button>
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="todo-lists-container">
+        <div class="container-md">
+            <table class="table table-striped text-center">
+                <thead>
+                    <tr class="border-bottom border-2 border-info">
+                        <th scope="col">Sl</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="list-body">
+                    <!-- <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                    </tr> -->
+                </tbody>
+            </table>
+
+
+            <div class="text-center">
+                <button class="btn btn-danger" id="clear_btn">Clear</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/e3f461dde5.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
